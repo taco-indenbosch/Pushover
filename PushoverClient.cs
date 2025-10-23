@@ -6,11 +6,11 @@ using Heddes.Rest;
 
 namespace Heddes.Pushover;
 
-public class PushoverService
+public class PushoverClient
 {
 	public const string SendMessageUrl = "https://api.pushover.net/1/messages.json";
 
-	public PushoverService(string apiKey, IHttpClient httpClient)
+	public PushoverClient(string apiKey, IHttpClient httpClient)
 	{
 		_apiKey = apiKey;
 		_httpClient = httpClient;
